@@ -1,0 +1,113 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 1.3rem;
+  color: $dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: .6em;
+  font-family: "Maiden Orange", sans-serif;
+  font-weight: bold;
+  line-height: 1em;
+  color: $secondary;
+}
+h1 {
+  &:not(.site-title, .product_title) {
+    margin-bottom: .25em;
+    padding: 0.75rem 0 .75rem 1.25rem;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 3px 3px 2px $primary;
+    background: $primary;
+    background: linear-gradient(90deg, $primary 50%, rgba(255,255,255,1) 100%);
+    border-radius: 10px;
+  }
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1rem;
+  color: $secondary;
+}
+.secondary-column {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.9rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+    color: $secondary;
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: $primary;
+  @include transition();
+
+  &:hover {
+    color: darken($primary, 20%);
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.entry-content {
+  ul, ol {
+    margin: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+.widget-container {
+  ul, ol {
+    margin: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+.comment-body {
+  ul, ol {
+    margin: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}

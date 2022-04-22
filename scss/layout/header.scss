@@ -1,0 +1,73 @@
+#header {
+  padding: 1rem 0;
+  background: white;
+  border-bottom: 4px solid $secondary;
+
+  .container {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+}
+
+#menu {
+  font-size: 1rem;
+
+  a {
+    color: $primary;
+    @include transition();
+
+    &:hover {
+      color: darken($primary, 20%);
+    }
+  }
+  ul {
+    &.sub-menu {
+      min-width: 18rem;
+      background: white;
+      @include box-shadow();
+      animation: translateX .3s ease-in-out forwards;
+      transform-origin: top center;
+      a {
+        display: block;
+        width: 100%;
+        color: $primary;
+      }
+    }
+  }
+  ul {
+    &.children {
+      a {
+
+      }
+    }
+  }
+  .menu-toggle {
+    color: $primary;
+  }
+  &.toggled {
+    a {
+      color: $primary;
+    }
+    ul {
+      &.sub-menu {
+        box-shadow: none;
+        border-top: 1px solid $light;
+        border-bottom: 1px solid $light;
+
+        a {
+          color: $primary;
+
+          &:hover {
+            background: light($light, 10%);
+          }
+        }
+      }
+    }
+  }
+}

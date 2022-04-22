@@ -1,0 +1,19 @@
+.woocommerce {
+  form {
+    .form-row {
+      textarea,
+      input.input-text {
+        padding: .2rem;
+        height: 2rem;
+        background: lighten($light, 20%);
+        border: 1px solid lighten($light, 10%);
+        @include border-radius();
+
+        &:focus {
+          box-shadow: 0 0 10px lighten($secondary, 40%);
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

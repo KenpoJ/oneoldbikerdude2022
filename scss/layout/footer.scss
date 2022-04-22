@@ -1,0 +1,42 @@
+#footer {
+  padding-bottom: 2rem;
+  color: lighten($light, 20%);
+  background: $primary;
+
+  a {
+    color: $light;
+
+    &:hover {
+      color: lighten($light, 20%);
+    }
+  }
+}
+
+/* ===================================
+  FOOTER NAVIGATION
+  =====================================*/
+  .site-footer {
+    width: 100%;
+  }
+  #menu-footer-menu {
+    padding:  0 0 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .social-links {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    @media screen and (max-width: 500px) {
+      width: 80%;
+    }
+    @media screen and (min-width: 1025px) {
+      width: 30%;
+    }
+  }

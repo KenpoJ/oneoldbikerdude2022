@@ -1,0 +1,148 @@
+.woocommerce-error, 
+.woocommerce-info, 
+.woocommerce-message {
+  border-top: 3px solid $primary;
+
+  &:before {
+    color: $primary;
+  }
+}
+a {
+  &.edit {
+    padding: .2rem .8rem;
+    border: 1px solid $primary;
+    @include border-radius();
+  }
+}
+
+#content.store-container {
+  width: 100%;
+}
+
+.woocommerce-products-header__title {
+  position: relative;
+
+  &:after {
+    @include motorcycle-icon();
+    font-size: 3rem;
+    color: white;
+    top: .5rem;
+    right: 5rem;
+  }
+}
+
+.woocommerce,
+.secondary-column {
+  ul {
+    &.products {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        &.product {
+          margin-bottom: 1.2rem;
+
+          .woocommerce-loop-product__title,
+          .price {
+            padding: .5rem .7rem;
+          }
+          .price {
+            text-align: center;
+          }
+          .add_to_cart_button {
+            margin-top: auto;
+            color: lighten($light, 10%);
+            background: $primary;
+          }
+        }
+      }
+    }
+  }
+  .woocommerce-breadcrumb {
+    a {
+      color: $primary;
+    }
+  }
+}
+
+.secondary-column {
+  ul {
+    &.products {
+      li {
+        &.product {
+          width: 45%;
+
+          .price {
+            display: none;
+          }
+          .add_to_cart_button {
+            display: none;
+          }
+        }
+        &:hover {
+          .woocommerce-loop-product__title {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.type-product {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lighten($light, 10%);
+  @include border-radius();
+
+  .woocommerce-loop-product__title,
+  .price {
+    // padding: .5rem .7rem;
+  }
+}
+
+.single-product-container {
+  .product {
+    border: none;
+  }
+  .type-product {
+    display: block;
+  }
+}
+
+.woocommerce {
+  .woocommerce-ordering {
+    select {
+      &.orderby {
+        height: 2rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+
+mark {
+  color: $secondary;
+  background: transparent;
+}
+
+.term-description {
+  margin-bottom: 2rem;
+}
+.wc-categories {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+  }
+
+  li {
+    margin-right: 3rem;
+  }
+}
+.woocommerce-result-count {
+  font-size: .9rem
+}
