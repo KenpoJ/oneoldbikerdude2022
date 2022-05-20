@@ -1,0 +1,33 @@
+.home {
+  .header {
+    height: 18rem;
+    // background: url('https://source.unsplash.com/random/1600x900?beautiful,woman') no-repeat center center / cover;
+
+    @media screen and (min-width: 501px) and (max-width: 1024px) {
+      height: 22rem;
+    }
+    @media screen and (min-width: 1025px) {
+      height: 26rem;
+    }
+  }
+
+  .featured-posts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 1rem;
+
+    .featured-posts-article {
+      &:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+  }
+  .article-title {
+    padding-bottom: .25rem;
+  }
+  .article-meta {
+    margin-bottom: .5rem;
+    font-size: .9rem;
+  }
+}

@@ -235,7 +235,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.6em;
-  font-family: "Maiden Orange", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
   line-height: 1em;
   color: #394055;
@@ -292,11 +292,11 @@ p {
   margin-bottom: 1rem;
 }
 
-a {
+a:not(.button) {
   color: #a52226;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 }
-a:hover {
+a:not(.button):hover {
   color: #501113;
 }
 
@@ -556,9 +556,14 @@ input.form-control {
 #menu {
   font-size: 1rem;
 }
+@media screen and (max-width: 800px) {
+  #menu {
+    margin-top: -2rem;
+  }
+}
 #menu a {
   color: #a52226;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 }
 #menu a:hover {
   color: #501113;
@@ -648,7 +653,7 @@ input.form-control {
   margin-top: 0.5rem;
   color: #394055;
 }
-.entry-content a {
+.entry-content a:not(.button) {
   color: #a52226;
 }
 
@@ -754,6 +759,36 @@ input.form-control {
 .product-preview ul li .price,
 .product-preview ul li .add_to_cart_button {
   display: none;
+}
+
+.home .header {
+  height: 18rem;
+}
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+  .home .header {
+    height: 22rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .home .header {
+    height: 26rem;
+  }
+}
+.home .featured-posts-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.home .featured-posts-container .featured-posts-article:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.home .article-title {
+  padding-bottom: 0.25rem;
+}
+.home .article-meta {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .woocommerce-error,

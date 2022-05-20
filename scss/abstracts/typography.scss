@@ -7,7 +7,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   padding-bottom: .6em;
-  font-family: "Maiden Orange", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
   line-height: 1em;
   color: $secondary;
@@ -60,11 +60,13 @@ p {
 }
 
 a {
-  color: $primary;
-  @include transition();
+  &:not(.button) {
+    color: $primary;
+    @include transition();
 
-  &:hover {
-    color: darken($primary, 20%);
+    &:hover {
+      color: darken($primary, 20%);
+    }
   }
 }
 

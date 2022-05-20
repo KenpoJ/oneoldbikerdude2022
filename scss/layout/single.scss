@@ -12,7 +12,9 @@
     color: $secondary;
   }
   a {
-    color: $primary;
+    &:not(.button) {
+      color: $primary;
+    }
   }
 }
 .mashsb-container{
