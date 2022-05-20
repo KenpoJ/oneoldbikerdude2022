@@ -412,6 +412,15 @@ button.disabled,
 .button.disabled {
   background: #f0f0f0;
 }
+input[type=submit].button-small,
+button.button-small,
+.button.button-small {
+  padding: 8px 15px;
+}
+
+.button-container {
+  padding-top: 1rem;
+}
 
 .search-page .header .entry-title {
   margin-bottom: 1em;

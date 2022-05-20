@@ -80,6 +80,12 @@ button,
   &.disabled {
     background: $dark-30;
   }
+  &.button-small {
+    padding: 8px 15px;
+  }
+}
+.button-container {
+  padding-top: 1rem;
 }
 
 .search-page {
