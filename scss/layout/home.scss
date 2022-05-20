@@ -11,6 +11,29 @@
     }
   }
 
+  #hero-home {
+    .container {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
+    .hero-title-container {
+      max-width: 50%;
+    }
+    .hero-title,
+    .hero-subtitle {
+      color: lighten($light, 20%);
+      text-shadow: 2px 3px rgba(0,0,0,.5);
+    }
+    .hero-title {
+      padding-bottom: 0;
+      font-size: 3rem;
+      line-height: 1.2em;
+    }
+    .hero-subtitle {
+      font-size: 2rem;
+    }
+  }
+
   .featured-posts-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -29,5 +52,9 @@
   .article-meta {
     margin-bottom: .5rem;
     font-size: .9rem;
+  }
+
+  .home-ecommerce-container {
+
   }
 }

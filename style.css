@@ -783,6 +783,26 @@ input.form-control {
     height: 26rem;
   }
 }
+.home #hero-home .container {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.home #hero-home .hero-title-container {
+  max-width: 50%;
+}
+.home #hero-home .hero-title,
+.home #hero-home .hero-subtitle {
+  color: #f8f9fb;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+}
+.home #hero-home .hero-title {
+  padding-bottom: 0;
+  font-size: 3rem;
+  line-height: 1.2em;
+}
+.home #hero-home .hero-subtitle {
+  font-size: 2rem;
+}
 .home .featured-posts-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -799,7 +819,6 @@ input.form-control {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
 }
-
 .woocommerce-error,
 .woocommerce-info,
 .woocommerce-message {
